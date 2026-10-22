@@ -39,7 +39,7 @@ I made it to generate parts, coz I usually read a lot of books, so, while it is 
 
 You add part, it gives your audio a good name eg 001.voicename.date.mp3 so that everything is generated in order. 
 
-If you have a beefy GPU I think the tool can detect it and use it, else you can tweak some of the code to make the GUI see the GPU. You might need to install some runtimes/dependencies for CUDA or ROCM for blazing fast/instant audio generation.
+If you have a beefy GPU, the tool can detect it, else you can tweak some of the code to make the GUI see the GPU. You might need to install some runtimes/dependencies for CUDA or ROCM for blazing fast/instant audio generation.
 
 You can clean the text, load text files, listen to the audio, load entire text files and so many other features you will meet. 
 
