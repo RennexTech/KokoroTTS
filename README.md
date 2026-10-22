@@ -1,5 +1,7 @@
 # KokoroTTS
-My GUI interface for offline Windows-based Text-To-Speech Kokoro The Beast!!
+My GUI interface for offline Windows-based Text-To-Speech: Kokoro The Beast!!
+
+NB: I might have hardcoded paths from my own computer, so, tweak the code a bit to fit your system.
 
 If you have ever desired to abandon Balabolka on windows, then here's a tool I built. 
 
