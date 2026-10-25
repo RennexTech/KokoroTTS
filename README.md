@@ -1,6 +1,20 @@
 # KokoroTTS
 My GUI interface for offline Windows-based Text-To-Speech: Kokoro The Beast!!
 
+Kokoro studio pro and the bat file and the vbs are one project. They work without a browser using a tkinter gui, just install python and you are good to go. I haven't tested with the gpu detection, coz i have none, but if you do, it will detect it automatically(🤞fingers crossed)
+
+The kokoro web server versions are two separate trial runs i was doing: 
+
+kokoro_working_cpu_webserver.py calls CPU directly from the browser and uses fastapi.
+
+kokoro_webgpu_001.py tried calling my old radeon r5 but it constantly crashed after a consistent 100% usage meaning windows has to disable that thing, coz my screen needs some gpu too. So, if you have amd radeon r5 430 or such gpus, don't do the following or you will waste your time:
+
+**1. Try to modify the models or patching them with several methods from online forums, it most likely fails or produces screeching sounds.
+
+2. Try to use the gpu for computation and audio generation coz the gpu is so old, its hardware is LIMITED, it works, it loads, but it can't help you generate. Rather buy another gpu, maybe an rx 580? an nvidia one that has better newer specs? Don't dare buy gpus that are pre-2017 for such work, like this radeon.
+
+3. Switching operating systems isn't going to make it do anything, your hardware is limited, even if the code/web servers are perfectly capable of calling the gpu.**
+ 
 NB: I might have hardcoded paths from my own computer, so, tweak the code a bit to fit your system.
 
 If you have ever desired to abandon Balabolka on windows, then here's a tool I built. 
