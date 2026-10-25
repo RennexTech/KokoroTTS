@@ -17,7 +17,7 @@ kokoro_webgpu_001.py tried calling my old radeon r5 but it constantly crashed af
 
 **1. Try to modify the models or patching them with several methods from online forums, it most likely fails or produces screeching sounds.
 
-2. Try to use the gpu for computation and audio generation coz the gpu is so old, its hardware is LIMITED, it works, it loads, but it can't help you generate. Rather buy another gpu, maybe an rx 580? an nvidia one that has better newer specs? Don't dare buy gpus that are pre-2017 for such work, like this radeon.
+2. Try to use the gpu for computation and audio generation coz the gpu is so old, its hardware is LIMITED, it works, it loads, but it can't help you generate. Rather buy another gpu, maybe an rx 580? an nvidia one that has better newer specs? Don't dare buy gpus that are pre-2017 specifically radeon, for such work.
 
 3. Switching operating systems isn't going to make it do anything, your hardware is limited, even if the code/web servers are perfectly capable of calling the gpu.**
  
