@@ -5,6 +5,12 @@ Kokoro studio pro and the bat file and the vbs are one project. They work withou
 
 The kokoro web server versions are two separate trial runs i was doing: 
 
+Your layout should look something like this: 
+
+<img width="684" height="168" alt="image" src="https://github.com/user-attachments/assets/ad1e7668-f847-421f-b4f3-91cecae3409f" />
+
+venv is optional for the web server versions. 
+
 kokoro_working_cpu_webserver.py calls CPU directly from the browser and uses fastapi.
 
 kokoro_webgpu_001.py tried calling my old radeon r5 but it constantly crashed after a consistent 100% usage meaning windows has to disable that thing, coz my screen needs some gpu too. So, if you have amd radeon r5 430 or such gpus, don't do the following or you will waste your time:
