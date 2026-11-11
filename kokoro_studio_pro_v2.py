@@ -1522,7 +1522,19 @@ class Studio(tk.Tk):
             self.select_part(p)
         return p
 
+    def _blank_selected(self):
+        """The selected part, if it is still completely empty (nothing typed, no audio)."""
+        self._sync_part_text()
+        p = self.sel
+        if p in self.parts and not p.text.strip() and not p.audio and p.state == 'idle':
+            return p
+        return None
+
     def add_part(self):
+        if self._blank_selected():
+            self.text.focus_set()
+            self.set_status('This part is already empty. Type or paste into it.')
+            return
         self._sync_part_text()
         i = self.parts.index(self.sel) + 1 if self.sel in self.parts else None
         self._new_part('', index=i)
@@ -2339,9 +2351,11 @@ class Studio(tk.Tk):
         txt = self._clean_clip()
         if not txt:
             return
-        self._sync_part_text()
-        i = self.parts.index(self.sel) + 1 if self.sel in self.parts else None
-        self._new_part(txt, index=i)
+        if self._blank_selected():
+            self._set_editor_text(txt)
+        else:
+            i = self.parts.index(self.sel) + 1 if self.sel in self.parts else None
+            self._new_part(txt, index=i)
         self._save_session_soon()
 
     def paste_split(self):
